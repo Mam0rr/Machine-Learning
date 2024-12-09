@@ -26,7 +26,7 @@ def evaluate_model(model, X_train, y_train, X_test, y_test):
 def compare_models(file_path, target_column='mean_temp'):
     X_train, X_test, y_train, y_test = load_and_clean_data(file_path, target_column)
     
-    # Initialize base models
+    # Initialise base models
     models = {
         'Random Forest': RandomForestRegressor(n_estimators=100, random_state=42),
         'Gradient Boosting': GradientBoostingRegressor(n_estimators=100, random_state=42),
